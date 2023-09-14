@@ -1,0 +1,9 @@
+---
+- name: Instalează nano
+  hosts: calculatoare
+  become: yes
+  tasks:
+    - name: Instalează pachetul nano
+      apt:
+        name: nano
+        state: present
